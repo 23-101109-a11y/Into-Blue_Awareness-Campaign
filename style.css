@@ -1,7 +1,13 @@
 :root {
-    --light_bg: #FEFDF9;
-    --light_scroller: #465FA9;
-    --light_scroller_hover: #000B2C;
+    --bg_color: #FEFDF9;
+    --scroller: #465FA9;
+    --scroller_hover: #000B2C;
+    --header_logo: url('icons/logo-light.svg');
+}
+
+.dark-mode {
+    --bg_color: #000B2C;
+    --header_logo: url('icons/logo-dark.svg');
 }
 
 * {
@@ -10,8 +16,19 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     height: 3000px;
+    background-color: var(--bg_color);
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
 }
 
 /* preloader */
@@ -37,7 +54,7 @@ body {
     width: 120px;
     height: 22px;
     border-radius: 20px;
-    color: var(--light_bg);
+    color: var(--bg_color);
     border: 2px solid;
     position: absolute;
 }
@@ -49,7 +66,7 @@ body {
     margin: 2px;
     inset: 0 100% 0 0;
     border-radius: inherit;
-    background-color: var(--light_bg);
+    background-color: var(--bg_color);
     animation: loader 2s forwards;
 }
 
@@ -70,18 +87,24 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--light_bg);
+  background-color: var(--bg_color);
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--light_scroller);
+    background-color: var(--scroller);
     border-radius: 10px;
     transition: all 200ms;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--light_scroller_hover);
+    background-color: var(--scroller_hover);
 }
 
 /* scrollbar */
+
+/* header */
+
+
+
+/* header */
