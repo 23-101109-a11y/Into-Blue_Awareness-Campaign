@@ -43,6 +43,14 @@ button {
 
 /* text styles */
 
+h1 {
+    font-size: 96px;
+}
+
+h5 {
+    font-size: 24px;
+}
+
 p {
     font-size: 16px;
 }
@@ -186,11 +194,33 @@ header a {
 /* hero section */
 
 .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    justify-content: space-between;
     background-image: var(--hero_bg);
     width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
+}
+
+.hero-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--bg_color);
+    font-family: "Darumadrop One";
+}
+
+.hero-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    color: var(--header_items);
+    font-family: "Mona Sans";
 }
 
 .scroll-cont {
