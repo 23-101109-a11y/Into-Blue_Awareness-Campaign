@@ -108,3 +108,22 @@ document.getElementById("copyrights").innerHTML = "© 2025 Into Blue. All rights
 
 
 // footer 
+
+
+// scroll to top button
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("scrollTopBtn").style.display = "block";
+    } else {
+        document.getElementById("scrollTopBtn").style.display = "none";
+    }
+}
+
+window.onscroll = scrollFunction;
+
+function topFunction() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+// scroll to top button

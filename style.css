@@ -16,6 +16,7 @@
     --fb_icon: url('icons/fb-light.svg');
     --twitter_icon: url('icons/twitter-light.svg');
     --yt_icon: url('icons/yt-light.svg');
+    --scroll_up_icon: url('icons/arrow-icon-light.svg');
 }
 
 .dark-mode {
@@ -33,6 +34,7 @@
     --fb_icon: url('icons/fb-dark.svg');
     --twitter_icon: url('icons/twitter-dark.svg');
     --yt_icon: url('icons/yt-dark.svg');
+    --scroll_up_icon: url('icons/arrow-icon-dark.svg');
 }
 
 * {
@@ -159,6 +161,38 @@ p {
 }
 
 /* scrollbar */
+
+
+/* scroll to top */
+
+#scrollTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    z-index: 2;
+    max-width: 64px;
+    background-color: var(--header_items);
+    border-radius: 100px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: var(--shadow);
+}
+
+.scroll-up-icon {
+    width: 24px;
+    height: 24px;
+    background-image: var(--scroll_up_icon);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* scroll to top */
+
 
 /* header */
 
