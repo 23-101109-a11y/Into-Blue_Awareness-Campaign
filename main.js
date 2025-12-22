@@ -34,3 +34,13 @@ document.getElementById("mode-toggle").addEventListener("click", () => {
 });
 
 // theme switcher
+
+// hero
+
+document.getElementById("heroText1").innerHTML = "INTO BLUE";
+document.getElementById("heroText2").innerHTML = "Awareness Campaign";
+document.getElementById("heroText3").innerHTML = "Protect the Marine Life";
+document.getElementById("heroText4").innerHTML = "Small daily actions can protect marine life and keep our oceans alive.";
+document.getElementById("scroller").innerHTML = "DIVE";
+
+// hero
