@@ -8,6 +8,24 @@ window.addEventListener("load", () => {
 
 // preloader
 
+// header 
+
+let navBar = [{
+    section: "Home",
+    id: "home",
+}, {
+    section: "Marine Life",
+    id: "animals",
+}]
+
+for (i = 0; i < navBar.length; i++) {
+    document.getElementById("navBar").innerHTML += `
+    <li><a href="#${navBar[i].id}">${navBar[i].section}</a></li>
+      `;
+}
+
+// header
+
 // theme switcher
 
 document.getElementById("mode-toggle").innerHTML = document.getElementById("mode-toggle").innerHTML;
