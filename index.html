@@ -6,6 +6,9 @@
     <title>Into Blue</title>
     <link rel="icon" href="icons/favicon.svg">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="preloader">
@@ -13,9 +16,24 @@
         <div class="loader"></div>
     </div>
     <header>
-        <button id="mode-toggle">
-            <img src="icons/theme-switcher.svg">
-        </button>
+        <div class="logo"></div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Marine Life</a></li>
+            </ul>
+            <ul>
+                <button>
+                    <img src="icons/login.svg">
+                </button>
+                <button>
+                    <img src="icons/language-switcher.svg">
+                </button>
+                <button id="mode-toggle">
+                    <img src="icons/theme-switcher.svg">
+                </button>
+            </ul>
+        </nav>
     </header>
 
     <script src="main.js"></script>

@@ -2,6 +2,8 @@
     --bg_color: #FEFDF9;
     --scroller: #465FA9;
     --scroller_hover: #000B2C;
+    --header_items: #000B2C;
+    --header_bg: #FEFDF9;
     --header_logo: url('icons/logo-light.svg');
 }
 
@@ -105,6 +107,50 @@ button {
 
 /* header */
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    z-index: 1;
+}
+
+.logo {
+    width: 42px;
+    height: 50px;
+    background-image: var(--header_logo);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    background-color: var(--header_bg);
+    padding: 10px 24px;
+    border-radius: 100px;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--header_items);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Mona Sans", sans-serif;
+}
 
 
 /* header */
