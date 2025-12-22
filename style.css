@@ -253,6 +253,11 @@ header a {
     background-image: var(--theme_icon);
 }
 
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
 /* header */
 
 

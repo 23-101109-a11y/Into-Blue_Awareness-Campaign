@@ -10,19 +10,45 @@ window.addEventListener("load", () => {
 
 // header 
 
-let navBar = [{
-    section: "Home",
-    id: "home",
-}, {
-    section: "Marine Life",
-    id: "animals",
-}]
+let navBar = [
+    {
+        section: "Home",
+        id: "home"
+    },
+    {
+        section: "Marine Life",
+        id: "animals"
+    }
+];
 
-for (i = 0; i < navBar.length; i++) {
-    document.getElementById("navBar").innerHTML += `
+let nav = document.getElementById("navBar");
+
+for (let i = 0; i < navBar.length; i++) {
+    nav.innerHTML += `
     <li><a href="#${navBar[i].id}">${navBar[i].section}</a></li>
-      `;
+    `;
 }
+
+let links = document.querySelectorAll("#navBar a");
+
+window.addEventListener("scroll", () => {
+
+for (let i = 0; i < navBar.length; i++) {
+
+let section = document.getElementById(navBar[i].id);
+let sectionTop = section.offsetTop;
+let sectionHeight = section.offsetHeight;
+let scrollPosition = window.scrollY;
+
+if (
+    scrollPosition >= sectionTop - 50 &&
+    scrollPosition < sectionTop + sectionHeight - 50
+    ) {
+        links.forEach(link => link.classList.remove("active"));
+        links[i].classList.add("active");
+    }
+  }
+});
 
 // header
 
