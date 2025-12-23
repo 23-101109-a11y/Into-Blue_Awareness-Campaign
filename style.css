@@ -17,6 +17,7 @@
     --twitter_icon: url('icons/twitter-light.svg');
     --yt_icon: url('icons/yt-light.svg');
     --scroll_up_icon: url('icons/arrow-icon-light.svg');
+    --card_bg: #D0E4FF;
 }
 
 .dark-mode {
@@ -422,6 +423,68 @@ header a {
 }
 
 /* random element section */
+
+
+/* did you know? section */
+
+#facts {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: start;
+    padding: 100px;
+}
+
+#facts h2 {
+    font-family: "Darumadrop One";
+    color: var(--header_items);
+}
+
+#facts span {
+    font-family: "Darumadrop One";
+    font-size: 200px;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 6px 0 10px rgba(0, 0, 0, 0.25);
+}
+
+#facts h6 {
+    font-family: "Mona Sans";
+    font-weight: 400;
+    max-width: 335px;
+}
+
+#factsCont {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}
+
+#factsRow1 {
+    display: flex;
+    gap: 12px;
+}
+
+#factsRow2 {
+    display: flex;
+    gap: 12px;
+}
+
+.fact {
+    border-radius: 12px;
+    background-color: var(--card_bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+    color: var(--header_items);
+    padding: 32px;
+    width: 100%;
+    height: fit-content;
+}
+
+/* did you know? section */
 
 
 /* footer */

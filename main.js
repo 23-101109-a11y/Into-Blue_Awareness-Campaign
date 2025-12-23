@@ -18,6 +18,10 @@ let navBar = [
     {
         section: "Marine Life",
         id: "animals"
+    },
+    {
+        section: "Facts",
+        id: "facts"
     }
 ];
 
@@ -72,6 +76,7 @@ document.getElementById("scroller").innerHTML = "DIVE";
 // hero
 
 // random element section
+document.getElementById("secTitle1").innerHTML = "Marine Life";
 
 let animals = [{
     img: "imgs/animal1.png",
@@ -125,6 +130,46 @@ showRandomAnimal();
 document.getElementById("randomBtn").addEventListener("click", showRandomAnimal);
 
 // random element section
+
+
+// did you know section
+
+document.getElementById("secTitle2").innerHTML = "Did you know?";
+
+let facts1 = [{
+    number: "1",
+    fact: "The 5 most common types of debris found in marine clean-ups are all single-use plastics.",
+},{
+    number: "2",
+    fact: "Ocean noise pollution in some areas has doubled every decade for the last 60 years, causing stress, disturbance and even death of marine life.",
+}]
+
+let facts2 = [{
+    number: "3",
+    fact: "There are over 500 ‘dead ocean zones’ across the world, covering an area equal to the United Kingdom. ",
+},{
+    number: "4",
+    fact: "Each year, over 1 million seabirds, 300,000 porpoises and dolphins, and 100,000 other marine mammals are killed by ocean pollution - often this is from entanglement from nets and ingestion of plastics. ",
+}]
+
+for (i = 0; i < facts1.length; i++) {
+    document.getElementById("factsRow1").innerHTML += `
+            <div class="fact">
+                <span>${facts1[i].number}</span>
+                <h6>${facts1[i].fact}</h6>
+            </div>`;
+}
+
+for (i = 0; i < facts2.length; i++) {
+    document.getElementById("factsRow2").innerHTML += `
+            <div class="fact">
+                <span>${facts2[i].number}</span>
+                <h6>${facts2[i].fact}</h6>
+            </div>`;
+}
+
+// did you know section
+
 
 
 // footer
