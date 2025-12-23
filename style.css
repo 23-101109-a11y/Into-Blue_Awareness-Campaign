@@ -347,6 +347,38 @@ header a {
 
 /* hero section */
 
+/* crisis section */
+
+#crisis {
+    background-image: var(--sec_bg);
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+#crisis h2 {
+    font-family: "Darumadrop One";
+    color: var(--header_items);
+}
+
+#crisisText1 {
+    font-family: "Mona Sans";
+    font-weight: 400;
+}
+
+#crisisReadMore {
+    font-family: "Mona Sans";
+    font-weight: 800;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* crisis section */
+
 
 /* random element section */
 
@@ -431,6 +463,9 @@ header a {
 /* did you know? section */
 
 #facts {
+    background-image: var(--sec_bg);
+    background-position: center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -493,6 +528,9 @@ header a {
 /* connect section */
 
 #connect {
+    background-image: var(--sec_bg);
+    background-position: center;
+    background-size: cover;
     padding: 100px;
     display: flex;
     align-items: center;

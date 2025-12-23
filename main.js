@@ -16,6 +16,10 @@ let navBar = [
         id: "home"
     },
     {
+        section: "Crisis",
+        id: "crisis"
+    },
+    {
         section: "Marine Life",
         id: "animals"
     },
@@ -78,6 +82,34 @@ document.getElementById("heroText4").innerHTML = "Small daily actions can protec
 document.getElementById("scroller").innerHTML = "DIVE";
 
 // hero
+
+// crisis section
+
+document.getElementById("secTitleCrisis").innerHTML = "Ocean Crisis";
+
+const shortText = 'Our oceans, once teeming with life and color, are now under unprecedented threat. Pollution, overfishing, and rising temperatures are driving countless species to the brink of extinction. Coral reefs, the vibrant heart of marine ecosystems, are bleaching and dying, leaving behind barren landscapes where life once thrived.';
+
+const fullText = 'Our oceans, once teeming with life and color, are now under unprecedented threat. Pollution, overfishing, and rising temperatures are driving countless species to the brink of extinction. Coral reefs, the vibrant heart of marine ecosystems, are bleaching and dying, leaving behind barren landscapes where life once thrived. Sea creatures, from the smallest fish to the largest whales, face challenges from plastic waste, habitat loss, and changing currents that disrupt their natural rhythms. Each action we take—or fail to take—echoes through the waters, affecting the delicate balance of life beneath the waves. The oceans’ silent cries remind us that the time to act is now, before these underwater worlds are lost forever.';
+
+document.getElementById("crisisText1").innerHTML = shortText;
+document.getElementById("crisisReadMore").innerHTML = "Read More";
+
+let isExpanded = false;
+
+document.getElementById("crisisReadMore").addEventListener("click", function() {
+    if (isExpanded) {
+
+        document.getElementById("crisisText1").innerHTML = shortText;
+        document.getElementById("crisisReadMore").innerHTML = "Read More";
+        isExpanded = false;
+    } else {
+        document.getElementById("crisisText1").innerHTML = fullText;
+        document.getElementById("crisisReadMore").innerHTML = "Read Less";
+        isExpanded = true;
+    }
+});
+
+// crisis section
 
 // random element section
 document.getElementById("secTitle1").innerHTML = "Marine Life";
@@ -172,7 +204,9 @@ for (i = 0; i < facts2.length; i++) {
             </div>`;
 }
 
+
 // did you know section
+
 
 // connect section
 
