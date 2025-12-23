@@ -3,7 +3,7 @@
     --scroller: #465FA9;
     --scroller_hover: #000B2C;
     --header_items: #000B2C;
-    --header_logo: url('icons/logo-dark.svg');
+    --header_logo: url('icons/logo-light.svg');
     --hero_bg: url('imgs/hero-bg-light.png');
     --login_icon: url('icons/login-light.svg');
     --language_icon: url('icons/language-switcher-light.svg');
@@ -18,12 +18,13 @@
     --yt_icon: url('icons/yt-light.svg');
     --scroll_up_icon: url('icons/arrow-icon-light.svg');
     --card_bg: #D0E4FF;
+    --warning: #FF5449;
 }
 
 .dark-mode {
     --bg_color: #000B2C;
     --header_items: #FEFDF9;
-    --header_logo: url('icons/logo-light.svg');
+    --header_logo: url('icons/logo-dark.svg');
     --hero_bg: url('imgs/hero-bg-dark.png');
     --login_icon: url('icons/login-dark.svg');
     --language_icon: url('icons/language-switcher-dark.svg');
@@ -553,5 +554,114 @@ footer {
 }
 
 /* footer */
+
+
+/* login page */
+
+.login {
+    background-color: var(--bg_color);
+    background-image: var(--hero_bg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login h4 {
+    font-family: "Darumadrop One";
+}
+
+.login-card {
+    background-color: var(--header_items);
+    padding: 30px 36px;
+    height: auto;
+    width: 473px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    color: var(--bg_color);
+}
+
+.logo {
+    background-image: var(--header_logo);
+    width: 78px;
+    height: 90px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.login-card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+}
+
+.login-input {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.login-input-title {
+    font-size: 14px;
+    font-family: "Mona Sans";
+    width: 100%;
+    display: flex;
+}
+
+.login-input-box {
+    height: 60px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    border: 1px solid var(--bg_color);
+}
+
+.login-button {
+    padding: 14px 0;
+    border-radius: 10px;
+    width: 70%;
+    border: none;
+    width: 100%;
+    background-color: var(--bg_color);
+}
+
+#google {
+    font-family: "Mona Sans";
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#login {
+    font-family: "Mona Sans";
+    font-size: 20px;
+    color: var(--header_items);
+    font-weight: 700;
+}
+
+#errorMsg {
+    display: none;
+    font-family: "Mona Sans";
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--warning);
+}
+
+/* login page */
+
 
 

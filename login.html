@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Into Blue - Login</title>
+    <link rel="icon" href="icons/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="preloader">
+        <video autoplay muted loop playsinline src="vids/preloader.mp4" type="video/mp4"></video>
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav>
+            <ul id="navBar"></ul>
+            <ul>
+                <a href="login.html"><button class="header-icon login-icon"></button></a>
+                <button class="header-icon language-icon"></button>
+                <button id="mode-toggle" class="header-icon theme-icon"></button>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="login">
+        <div class="login-card">
+            <div class="logo"></div>
+            <div class="login-card1">
+                <h4>Welcome Back!</h4>
+                <form class="login-form">
+                    <div class="login-input">
+                        <label class="login-input-title">Email</label>
+                        <input id="inputEmail" class="login-input-box" type="text" placeholder="" required>
+                    </div>
+                    <div class="login-input">
+                        <label class="login-input-title">Password</label>
+                        <input id="inputPassword" class="login-input-box" type="password" placeholder="" required>
+                    </div>
+                </form>
+            </div>
+            <button class="login-button" id="login" onclick="login()">LOGIN</button>
+            <span id="errorMsg">Wrong username or password</span>
+        </div>
+    </section>
+
+
+    <script src="localStorage.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
