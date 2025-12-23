@@ -22,6 +22,10 @@ let navBar = [
     {
         section: "Facts",
         id: "facts"
+    },
+    {
+        section: "Connect",
+        id: "connect"
     }
 ];
 
@@ -170,7 +174,14 @@ for (i = 0; i < facts2.length; i++) {
 
 // did you know section
 
+// connect section
 
+document.getElementById("secTitle3").innerHTML = "Be the Voice for the Ocean";
+document.getElementById("connectText").innerHTML = "Your thoughts, questions, and ideas matter. Every message helps keep the ocean alive.";
+
+
+
+// connect section
 
 // footer
 
