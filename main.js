@@ -180,7 +180,6 @@ document.getElementById("secTitle3").innerHTML = "Be the Voice for the Ocean";
 document.getElementById("connectText").innerHTML = "Your thoughts, questions, and ideas matter. Every message helps keep the ocean alive.";
 
 
-
 // connect section
 
 // footer
